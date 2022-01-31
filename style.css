@@ -1,0 +1,127 @@
+:root {
+    --titulo-color: #023d25;
+    --botones-color: #41b784;
+    --span-color: #828282;
+    --input-color: #f2f2f2;
+    --boder-color: #e7e7e7;
+
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    /*background-image: url("./img/bg.jpg");*/
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* Header */
+header {
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+    color: var(--titulo-color);
+}
+
+
+/* Body */
+
+form {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+
+.cuadrado, .triangulo, .circulo {
+    width: 100%;
+    max-width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: 1px solid var(--boder-color);
+}
+.text_titulo {
+    color: var(--titulo-color);
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+
+}
+.text-span{
+    color: var(--span-color);
+    font-size: 13px;
+    margin-bottom: 8px;
+    /*margin-bottom: 10px;*/
+
+}
+input {
+    height: 35px;
+    border: 1px solid var(--boder-color);
+    border-radius: 5px;
+    padding: 0 5px;
+    margin: 10px 0;
+    width: 100%;
+    background-color: var( --input-color) ;
+}
+
+.primera, .segunda {
+
+    justify-content: center;
+    align-items: center;
+}
+.input-Container {
+    display: inline-grid;
+    margin: 5px;
+
+}
+label {
+    font-size: 13px;
+    color: var(--span-color);
+}
+.button-Container {
+    width: 100%;
+    display: flex;
+}
+button {
+    width: 100%;
+    background-color: var(--botones-color);
+    padding: 10px 8px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    border-color: transparent;
+
+}
+.button-perimetro, .button-area {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10px 4px;
+    width: 50%;
+}
+.text-button {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 10px;
+}
+.titulo-Container {
+    margin-bottom: 20px;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}

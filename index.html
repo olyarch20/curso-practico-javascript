@@ -1,10 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Esta pagina te mostrara calculadora para figuras">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Figuras geométricas</title>
 </head>
 <body>
-$END$
+<header>
+    <h1>Figuras geométricas</h1>
+</header>
+<section>
+    <div class="cuadrado">
+        <div class="titulo-Container">
+            <h2 class="text_titulo">Calcula el área y perímetro de un cuadrado</h2>
+            <span class="text-span">Escribe cuanto mide cada lado de tu cuadrado</span>
+        </div>
+
+        <form>
+            <label for="InputCuadrado"></label>
+            <input id="InputCuadrado" type="number" placeholder="Ingresar valor"/>
+            <div class="button-Container">
+                <div class="button-perimetro">
+                    <span class="text-button">Perímetro:</span>
+                    <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perímetro</button>
+                </div>
+                <div class="button-area">
+                    <span class="text-button">Area:</span>
+                    <button type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="triangulo">
+        <div class="titulo-Container">
+            <h2 class="text_titulo">Calcula el área y perímetro de un triángulo</h2>
+            <span class="text-span">Escribe cuanto mide cada lado de tu triángulo</span>
+        </div>
+
+        <form>
+            <div class="primera">
+                <div class="input-Container">
+                    <label for="Input1">Lado 1</label>
+                    <input id="Input1" type="number" placeholder="Ingresar valor"/>
+                </div>
+               <div class="input-Container">
+                   <label for="Input2">Lado 2</label>
+                   <input id="Input2" type="number" placeholder="Ingresar valor"/>
+               </div>
+            </div>
+            <div class="segunda">
+                <div class="input-Container">
+                    <label for="Input3">Base</label>
+                    <input id="Input3" type="number" placeholder="Ingresar valor"/>
+                </div>
+                <div class="input-Container">
+                    <label for="altura">Altura</label>
+                    <input id="altura" type="number" placeholder="Ingresar valor"/>
+                </div>
+
+            </div>
+            <div class="button-Container">
+                <div class="button-perimetro" >
+                    <span class="text-button">Perímetro:</span>
+                    <button type="button" onclick="calcularPerimetroTriangulo()">Calcular perímetro</button>
+                </div>
+                <div class="button-area">
+                    <span class="text-button">Area:</span>
+                    <button type="button" onclick="calcularAreaTriangulo()">Calcular área</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="circulo">
+        <div class="titulo-Container">
+            <h2 class="text_titulo">Calcula el área y perímetro de un círculo</h2>
+            <span class="text-span">Escribe cuanto mide el radio de tu círculo</span>
+        </div>
+        <form>
+            <label for="inputCirculo"></label>
+            <input id="inputCirculo" type="number" placeholder="Ingresar valor"/>
+            <div class="button-Container">
+                <div class="button-perimetro">
+                    <span class="text-button">Perímetro:</span>
+                    <button type="button" onclick="calcularPerimetroCirculo()">Calcular perímetro</button>
+                </div>
+                <div class="button-area">
+                    <span class="text-button">Area:</span>
+                    <button type="button" onclick="calcularAreaCirculo()">Calcular área</button>
+                </div>
+
+
+            </div>
+
+
+        </form>
+    </div>
+</section>
+
+
+<script src="figuras.js"></script>
 </body>
 </html>
