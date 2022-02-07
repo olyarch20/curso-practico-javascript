@@ -40,12 +40,13 @@ form {
 
 }
 
-.cuadrado, .triangulo, .circulo {
+.cuadrado, .triangulo, .circulo, .isosceles {
     width: 100%;
-    max-width: 500px;
-    flex-direction: column;
+    max-width: 600px;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 10px 15px;
     margin: 0 10px;
     border-radius: 5px;

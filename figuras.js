@@ -58,6 +58,28 @@ function areaCirculo(radio){
 
 console.groupEnd();
 
+// Código del triángulo isósceles
+
+console.group("Triángulo");
+
+function alturaTriangulo(lado1, lado2, base) {
+    if(lado1 === lado2 && lado1 != base){
+        alert('isosceles')
+        return altura = Math.sqrt(lado1**2 - base**2/ 4)
+
+    }
+    else{
+        alert('no es isosceles')
+    }
+
+}
+altura (6,6,4)
+
+
+
+
+console.groupEnd();
+
 
 // Botones
 
@@ -119,3 +141,21 @@ function calcularAreaCirculo(){
     alert(area);
 }
 
+
+//Isósceles
+
+
+function calcularAlturaTriangulo() {
+    const lado1 = document.getElementById("lado1");
+    const value1 = Number (lado1.value);
+
+    const lado2 = document.getElementById("lado2");
+    const value2 = Number (lado2.value);
+
+    const base = document.getElementById("base");
+    const value3 = Number (base.value);
+
+    const altura = alturaTriangulo(value1, value2, value3);
+    alert(altura);
+
+}
