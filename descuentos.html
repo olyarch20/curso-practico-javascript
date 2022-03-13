@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Esta pagina te mostrara calculadora para figuras">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Porcentajes & Descuentos</title>
+</head>
+<body>
+
+<h1 class="title">Porcentajes & Descuentos</h1>
+
+<section class="calculadora">
+    <h2>Calcular el precio a pagar de tus productos con descuento. </h2>
+    <form class="form-calc">
+        <label for="InputPrice">Escribe el precio de tu producto:</label>
+        <input id="InputPrice" type="number">
+
+        <label for="InputDiscount">Escribe el descuento de tu producto:</label>
+        <input id="InputDiscount" type="number">
+
+        <button type="button" onclick="ButtonPrice()">
+            Calcular el precio con descuento
+        </button>
+
+        <h2 id="ResultP"></h2>
+    </form>
+</section>
+
+
+<script src="descuentos.js"></script>
+</body>
+</html>
